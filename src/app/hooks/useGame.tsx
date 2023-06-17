@@ -82,7 +82,7 @@ export const useGame = () => {
   };
 
   const formatTime = () => {
-    return new Date(time).toISOString().slice(17, -1);
+    return new Date(time).toISOString().slice(14, -1);
   };
 
   return {
