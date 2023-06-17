@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --bun-color: #E58923;
+  --lettuce-color: #1FAE45;
+  --cheese-color: #F0C921;
+  --ketchup-color: #ED3219;
+  --burger-color: #633318;
+  --seed-color: #F1EBD2;
+  --background-color: #DFE7AA;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--background-color);
+}

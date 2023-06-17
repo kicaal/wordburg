@@ -1,0 +1,175 @@
+.box-canvas{
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 160px;
+  height: 90px;
+}
+
+.bun {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bun-color);
+  width: 150px;
+}
+
+.bun.top {
+  top: 30px;
+  height: 40px;
+  border-radius: 50% 50% 10% 10%;
+}
+
+.seed {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--seed-color);
+  border-radius: 50%;
+}
+
+.seed.center {
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+}
+
+.seed.left {
+  top: 10px;
+  transform: rotate(55deg);
+  left: 25%;
+}
+
+.seed.right {
+  left: 75%;
+  top: 10px;
+  transform: translateX(-75%) rotate(-55deg);
+}
+
+.seed::before {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  width: 6px;
+  height: 6px;
+  background: var(--seed-color);
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.bun.bottom {
+  top: 100px;
+  height: 30px;
+  border-radius: 30%;
+}
+
+/* Centre lettuce */
+.lettuce {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+  background: var(--lettuce-color);
+  width: 80px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* Left section */
+.lettuce::before {
+  content: '';
+  position: absolute;
+  background: var(--lettuce-color);
+  width: 60px;
+  height: 25px;
+  border-radius: 50%;
+  left: -40px;
+}
+
+/* Right section */
+.lettuce::after {
+  content: '';
+  position: absolute;
+  background: var(--lettuce-color);
+  width: 60px;
+  height: 25px;
+  border-radius: 50%;
+  left: 60px;
+}
+
+.cheese {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 20px;
+  top: 70px;
+  background: var(--cheese-color);
+  border-radius: 20%;
+}
+
+/* Left fold */
+.cheese::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  border-radius: 0 0 0 40%;
+  background: var(--cheese-color);
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+}
+
+/* Right fold */
+.cheese::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  border-radius: 0 0 40% 0;
+  background: var(--cheese-color);
+  clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+
+.ketchup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 125px;
+  height: 10px;
+  top: 90px;
+  border-radius: 0 0 30% 30%;
+  background: var(--ketchup-color);
+}
+
+/* Left drip */
+.ketchup::before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  background: var(--ketchup-color);
+  height: 30px;
+  width: 15px;
+  border-radius: 0 0 50% 50%;
+}
+
+/* Right drip */
+.ketchup::after {
+  content: '';
+  position: absolute;
+  left: 40px;
+  background: var(--ketchup-color);
+  height: 20px;
+  width: 15px;
+  border-radius: 0 0 50% 50%;
+}
+
+.burger {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--burger-color);
+  width: 160px;
+  height: 30px;
+  top: 85px;
+  border-radius: 30%;
+}
