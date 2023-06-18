@@ -51,7 +51,7 @@ export default function Home() {
         </a>{" "}
         with 🖤. Check out the{" "}
         <a
-          href="https://github.com/kicaal"
+          href="https://github.com/kicaal/wordburg"
           className="underline"
           target="_blank"
         >
