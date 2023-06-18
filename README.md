@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wordburg
 
-## Getting Started
+Wordburg is a game to improve typing. https://wordburg.vercel.app/
 
-First, run the development server:
+## What is Wordburg about
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Is a challenge in which you have to build 5 hamburgers in the shortest time possible. How? You have to write 5 words for each hamburger
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## I want to contribute
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+First of all, THANKS 💓. Feel free to submit issues or PRs.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Roadmap
 
-## Learn More
+Well, "roadmap"....
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] OAuth with github/google and create an api to do a classification
+- [ ] Support for more languages (spanish, chinese, german...)
+- [ ] Improve responsive
+- [ ] Make it PWA so you can play it offline
