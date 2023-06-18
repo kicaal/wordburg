@@ -3,9 +3,11 @@ import { ChangeEvent, useEffect } from "react";
 export const Input = ({
   onChange,
   inputValue,
+  disabled,
 }: {
   inputValue: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  disabled: boolean;
 }) => {
   useEffect(() => {
     document
@@ -16,9 +18,9 @@ export const Input = ({
   return (
     <input
       id="Input"
+      className="w-full h-20 px-4 text-4xl"
       value={inputValue}
-      className="w-full h-20 px-4 text-2xl"
-      type="text"
+      onChange={onChange}
       onPaste={() => {
         return;
       }}
@@ -26,7 +28,8 @@ export const Input = ({
         return;
       }}
       autoComplete="off"
-      onChange={onChange}
+      disabled={disabled}
+      type="text"
     />
   );
 };
